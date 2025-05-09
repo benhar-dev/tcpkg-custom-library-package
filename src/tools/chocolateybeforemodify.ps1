@@ -5,10 +5,10 @@
 # Everything below this line is a script that will be executed and does not need to be modified.
 # ----------------------------------------------------------------------------------------------
 
-$ManLibPath = "$($env:ALLUSERSPROFILE)\Beckhoff\TwinCAT\PlcEngineering\Managed Libraries\"
-if (Test-Path -Path $ManLibPath) {
-	$cachefiles = Get-ChildItem -Path $ManLibPath* -Include "cache*"
-	foreach ($cf in $cachefiles) {
-		Remove-Item -Path $cf.FullName
-	}
+$manLibPath = Join-Path $env:ALLUSERSPROFILE 'Beckhoff\TwinCAT\PlcEngineering\Managed Libraries'
+
+if (Test-Path -Path $manLibPath) {
+    Get-ChildItem -Path $manLibPath -Filter 'cache*' -Recurse -File | ForEach-Object {
+        Remove-Item -Path $_.FullName -Force
+    }
 }
