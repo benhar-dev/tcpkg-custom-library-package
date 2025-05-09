@@ -66,7 +66,7 @@ All of the sections in the file are commented, so read through and customize as 
     <!-- Should the user accept the license during install? -->
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
 
-    <!-- Icon shown in Chocolatey GUI, use a PNG file -->
+    <!-- Icon shown in TcPkgUI (if a workload), use a PNG file -->
     <icon>icon.png</icon>
 
     <!-- Tags control how your package is displayed in the UI-->
