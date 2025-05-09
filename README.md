@@ -175,6 +175,8 @@ tcpkg source add -n "My Local Feed" -s "C:\LocalFeed"
 
 ### 2. Disable Signature Verification (Only once)
 
+Please note, this step will remove signature verification for all feeds, so only do so if you understand the consequences and associated risk.  
+
 ```cmd
 tcpkg config unset -n VerifySignatures
 ```
