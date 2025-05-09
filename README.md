@@ -173,9 +173,10 @@ tcpkg pack "C:\Path\To\MyCustomLibraryPackage.nuspec" -o "C:\LocalFeed"
 tcpkg source add -n "My Local Feed" -s "C:\LocalFeed"
 ```
 
-### 2. Disable Signature Verification (Only once)
+### 2. Disable Signature Verification (Only Once)
 
-Please note, this step will remove signature verification for all feeds, so only do so if you understand the consequences and associated risk.  
+> **⚠️ Warning:** Disabling signature verification applies to *all* feeds.  
+> Only do this if you fully understand the **risks** and **security implications**.
 
 ```cmd
 tcpkg config unset -n VerifySignatures
