@@ -1,0 +1,14 @@
+﻿=== VERIFICATION ===
+
+This package contains a TwinCAT .library file intended for installation into Beckhoff PLC environments.
+
+File included:
+- MyCustomLibraryPlcProject.library
+
+The file was created by the package author using TwinCAT XAE.
+
+No external downloads or third-party binaries are included.
+
+To verify:
+1. You can open the .library file using TwinCAT XAE to inspect its contents.
+2. Package version matches the version stated in chocolateyuninstall.ps1 and MyCustomLibraryPackage.nuspec.

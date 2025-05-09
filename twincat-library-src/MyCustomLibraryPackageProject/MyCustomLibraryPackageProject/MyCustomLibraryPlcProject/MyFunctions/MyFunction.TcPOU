@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="MyFunction" Id="{4f0b7114-9f5e-444e-8322-38569dcddb74}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION MyFunction : T_MAXSTRING
+VAR_INPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[MyFunction := 'Hello World';]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

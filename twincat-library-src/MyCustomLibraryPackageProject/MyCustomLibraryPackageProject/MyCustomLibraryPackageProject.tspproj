@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4026.15">
+	<Project ProjectGUID="{7D218BAC-7CDC-49BA-ACAF-450E8C66C1C3}" Target64Bit="true" ShowHideConfigurations="#x6">
+		<Plc>
+			<Project GUID="{5323D094-4C83-4AEA-83FE-5641A966531A}" Name="MyCustomLibraryPlcProject" PrjFilePath="MyCustomLibraryPlcProject\MyCustomLibraryPlcProject.plcproj" TmcFilePath="MyCustomLibraryPlcProject\MyCustomLibraryPlcProject.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e"/>
+		</Plc>
+	</Project>
+</TcSmProject>

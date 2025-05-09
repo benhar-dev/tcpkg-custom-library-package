@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This is a sample .nuspec file for a Chocolatey/NuGet package.
+-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Package ID: must be unique across your feed or nuget.org -->
+    <id>MyCustomLibraryPackage</id>
+
+    <!-- Semantic versioning: major.minor.patch -->
+    <version>1.2.3</version>
+
+    <!-- Human-friendly name -->
+    <title>My Custom Library Package</title>
+
+    <!-- Author name or team -->
+    <authors>Your Name</authors>
+
+    <!-- Link to your project site or documentation -->
+    <projectUrl>https://www.yourwebsite.com/</projectUrl>
+
+    <!-- Copyright notice -->
+    <copyright>(c) Your Name</copyright>
+
+    <!-- License file (or external license link) -->
+    <licenseUrl>https://www.yourwebsite.com/license</licenseUrl>
+
+    <!-- Should the user accept the license during install? -->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+
+    <!-- Icon shown in Chocolatey GUI, use a PNG file -->
+    <icon>icon.png</icon>
+
+    <!-- Tags control how your package is displayed in the UI-->
+    <tags> CategoryMy&#160;Custom&#160; AllowMultipleVersions <!--
+    Tags:
+    - Category<Name>
+        Used to organize your packages into logical categories in Chocolatey GUI or your custom feed.
+        Example: "CategoryMy&#160;Custom" will be shown as "My Custom".
+        Notes:
+          • "Category" is stripped from the display name.
+          • Use &#160; for non-breaking spaces if the category has multiple words.
+
+    - AllowMultipleVersions
+        Allows different versions of the same package to be installed side-by-side.
+
+    - VariantXAE
+        Marks this package as intended for Engineering (XAE) environments only.
+        Excludes the package from Runtime (XAR) listings.
+        Use this to filter visibility and relevance.
+
+    - VariantXAR
+        Marks this package as intended for Runtime (XAR) environments only.
+        Excludes the package from Engineering (XAE) listings.
+
+    - Workload
+        Identifies this package as a "workload" — typically a meta-package that groups or installs
+        other packages via dependencies.
+
+      -->
+    </tags>
+
+    <!-- One-liner or paragraph description (required) -->
+    <description>This is a custom package for delivering a library.</description>
+
+    <!-- Optional: Shown in package viewers -->
+    <releaseNotes>These are my custom package release notes. Use markdown</releaseNotes>
+
+    <!-- Optional: Add dependencies to other packages if needed -->
+    <dependencies>
+      <!-- Example:
+      <dependency id="OtherPackage" version="[1.0.0,2.0.0)" />
+      -->
+    </dependencies>
+  </metadata>
+
+  <!-- Files section tells Chocolatey/NuGet which files to include in the package -->
+  <files>
+    <!-- Icon file for Chocolatey/NuGet UI -->
+    <file src="PackageIcon.png" target="icon.png" />
+
+    <!-- All scripts and supporting files go in the tools folder -->
+    <file src="tools\**" target="tools" />
+
+    <!-- Your actual PLC library file to install -->
+    <file src="MyCustomLibraryPlcProject.library" target="tools\MyCustomLibraryPlcProject.library" />
+  </files>
+</package>
