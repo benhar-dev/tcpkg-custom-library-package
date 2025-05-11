@@ -42,34 +42,34 @@ All of the sections in the file are commented, so read through and customize as 
 -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Package ID: must be unique across your feed or nuget.org -->
+    <!-- Required: Package ID: must be unique across your feed or nuget.org -->
     <id>MyCustomLibraryPackage</id>
 
-    <!-- Semantic versioning: major.minor.patch -->
+    <!-- Required: Semantic versioning: major.minor.patch -->
     <version>1.2.3</version>
 
-    <!-- Human-friendly name -->
+    <!-- Optional: Human-friendly name -->
     <title>My Custom Library Package</title>
 
-    <!-- Author name or team -->
+    <!-- Required: Author name or team -->
     <authors>Your Name</authors>
 
-    <!-- Link to your project site or documentation -->
+    <!-- Optional: Link to your project site or documentation -->
     <projectUrl>https://www.yourwebsite.com/</projectUrl>
 
-    <!-- Copyright notice -->
+    <!-- Optional: Copyright notice -->
     <copyright>(c) Your Name</copyright>
 
-    <!-- License file (or external license link) -->
+    <!-- Optional: License file (or external license link) -->
     <licenseUrl>https://www.yourwebsite.com/license</licenseUrl>
 
-    <!-- Should the user accept the license during install? -->
+    <!-- Optional: Should the user accept the license during install? -->
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
 
-    <!-- Icon shown in TcPkgUI (if a workload), use a PNG file -->
+    <!-- Required: Icon shown in TcPkgUI (if a workload), use a PNG file -->
     <icon>icon.png</icon>
 
-    <!-- Tags control how your package is displayed in the UI-->
+    <!-- Required: Tags control how your package is displayed in the UI-->
     <tags> CategoryMy&#160;Custom&#160; AllowMultipleVersions <!--
     Tags:
     - Category<Name>
@@ -98,7 +98,7 @@ All of the sections in the file are commented, so read through and customize as 
       -->
     </tags>
 
-    <!-- One-liner or paragraph description (required) -->
+    <!-- Required: One-liner or paragraph description -->
     <description>This is a custom package for delivering a library.</description>
 
     <!-- Optional: Shown in package viewers -->
