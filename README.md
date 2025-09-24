@@ -95,6 +95,9 @@ All of the sections in the file are commented, so read through and customize as 
         Identifies this package as a "workload" — typically a meta-package that groups or installs
         other packages via dependencies.
 
+    - InstallationLevel1
+       Instruct tcpkg that no admin is required to install this package.
+
       -->
     </tags>
 
@@ -231,3 +234,4 @@ tcpkg pack "C:\Path\To\MyCustomLibraryPackage.nuspec" -o "C:\LocalFeed"
     ├── chocolateyuninstall.ps1            # Uninstalls the PLC library using RepTool
     └── chocolateybeforemodify.ps1         # Clears managed library cache before install/upgrade
 ```
+
